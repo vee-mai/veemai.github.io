@@ -4,5 +4,14 @@ body{
 
 	--color--primary:black;
 	--color--secondary:gold;
-	--color--background:whtie;
+	--color--background:tomato;
+}
+
+header{
+	background-color: var(--color--background);
+	padding-inline: var(--gutter-size);
+}
+
+.gutters{
+	padding-inline: var(--gutter-size);
 }

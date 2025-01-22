@@ -1,17 +1,29 @@
 body{
-	--base-size: 12px;
+	--base-size: 20px;
 	--gutter-size: calc(3*var(--base-size));
 
 	--color--primary:black;
 	--color--secondary:gold;
 	--color--background:tomato;
+	
+	font-size: var(--base-size);
 }
 
 header{
 	background-color: var(--color--background);
-	padding-inline: var(--gutter-size);
+	padding-block: calc(5 * var(--base-size));
+}
+section{
+	block-size: 75vh;
+}
+
+footer{
+	background-color:var(--color--background);
+	padding-top: var(--base-size);
+	padding-bottom: calc(5 * var(--base-size));
 }
 
 .gutters{
 	padding-inline: var(--gutter-size);
 }
+

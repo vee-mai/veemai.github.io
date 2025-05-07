@@ -6,46 +6,55 @@
 		<link href="stylesheet/reset.css" rel="stylesheet">
 		<link href="stylesheet/main.css" rel="stylesheet">
 		<link href="stylesheet/style.css" rel="stylesheet">
-		<link href="assets" rel="stylesheet">
+		<link href="assets" rel="stylesheet">		
+		<script defer src="assets/main.js"></script>
 	</head>
 	
 	<body>
-		<header class="gutters">
-			<h1>Vee Mai</h1>
-		</header>
-		
-		<section>
-			<p>Vy (Vee) is a UI/UX designer blending business strategy with design thinking. Originally from Vietnam, she’s pursuing a Master’s in Communication Design at Parsons, NYC.</p>
-		
-			<ul>
-				<li class="project-card">
-					<a href="https://vee-mai.github.io/Manuscript/">
-						<p>First Project </p>
-						<p><em>Manuscript</em></p>
-						<p>Fall 2024</p>
-					</a>
-				</li>
+		<main class="container">
+			<header class="gutters">
+				<h1>Vee Mai</h1>
+				<h1 class="right-align">Digital<br />Playground</h1>
+			</header>
 
-				<li>
-					<a href="https://vee-mai.github.io/Spread-24/">
-						<p>Second Project </p>
-						<p><em>Spread</em></p>
-						<p>Fall 2024</p>
-					</a>
-				</li>
+			<div class="about-projects-wrapper">
+				<section class="about">
+					<h2>About</h2>
+					<p>Hey there! If you didn’t land here from my main portfolio — I’m Vee, a product designer exploring where code and design meet.
+					</p>
+					<p>
+						This Playground features projects I built with HTML, CSS, and JavaScript as part of my Typography & Interaction class at Parsons.
+					</p>
+				</section>
 
-				<li>
-					<a href="https://vee-mai.github.io/Binding/">
-						<p>Third Project </p>
-						<p><em>Binding</em></p>
-						<p>Fall 2024</p>
-					</a>
-				</li>
-			</ul>
-		</section>
+				<section class="projects">
+					<div class="projects-header">
+						<h2>View Projects</h2>
+						<span>5</span>
+					</div>
+					<div class="select-projects">
+						<button class="filter-button" id="project1">1</button>
+						<button class="filter-button" id="project2">2</button>
+						<button class="filter-button" id="project3">3</button>
+						<button class="filter-button" id="project4">4</button>
+						<button class="filter-button" id="project5">5</button>
+					</div>
+					<div class="project-image">
+						<a href="https://vee-mai.github.io/Project-5/" target="_blank" rel="noopener noreferrer">
+							<img class="projectPreview" src="./assets/project5.png" alt="Project preview" />
+						</a>
+					</div>
+				</section>
+			</div>
 
-		<footer>
-			<p>&copy;2025, Vee </p>
-		</footer>
-	</body>
+			<footer class="footer">
+				<p class="email">vee.t.mai@gmail.com</p>
+				<nav class="nav-links">
+				<a href="#">Portfolio</a>
+				<a href="#">Resume</a>
+				<a href="#">Github</a>
+				</nav>
+			</footer>
+		</main>
+	</body>		
 </html>

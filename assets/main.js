@@ -17,4 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
   if (firstPreview) {
     firstPreview.classList.add("active");
   }
+
+    // 🔹 Collapsible Section Logic
+    const toggles = document.querySelectorAll('.collapsible-toggle');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.toggle-icon');
+      
+          content.classList.toggle('show');
+          icon.textContent = content.classList.contains('show') ? '–' : '+';
+          icon.classList.toggle('expanded', content.classList.contains('show'));
+      });
+    });
 });

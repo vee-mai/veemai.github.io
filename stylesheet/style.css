@@ -4,11 +4,15 @@
     --main-typeface:"Poppins", sans-serif;
     --secondary-typeface:"Quicksand", sans-serif;
 
+	--p:14px;
+
 	--container-padding:1.5rem 1.25rem 2.5rem;
+
+	--line-height-s:1.5;
 
 	--height:100vh;
 
-
+	--text-color:#121212;
 }
 
 .container {
@@ -19,36 +23,34 @@
 
 body {
 	font-family:var(--main-typeface);
-	color: #1a1a1a;
-	line-height: 1.5;
+	color: var(--text-color);
+	line-height:var(--line-height-s);
 }
   
-  /* Header */
-.header {
+/* Header */
+.gutters {
 	display: flex;
+	flex-direction:row;
 	justify-content: space-between;
 	align-items: start;
-	margin-bottom: 24px;
-  }
-.right-align {
+	margin-bottom:4rem;
+}
+
+.web-title {
 	text-align: right;
-  }
-  
-  /* Section titles */
-.about h2,
-.projects h2 {
-	font-size: 1rem;
-	font-weight: 700;
-	border-bottom: 2px solid #000;
-	display: inline-block;
-	margin-bottom: 8px;
-  }
-  
-  /* About Text */
+}
+
+.logo{
+	height:20px;
+	width:auto;
+	display:block;
+}
+
+/* About Text */
   .about p {
-	margin-bottom: 12px;
-	font-size: 0.95rem;
-  }
+	margin-bottom:1rem;
+	font-size:var(--p);
+}
   
   /* Projects */
   .projects-header {
@@ -119,7 +121,30 @@ body {
 	/* Remove individual borders or after lines */
 	border-bottom: none;
   }
+  .collapsible-content {
+	display: none;
+	transition: all 0.3s ease;
+  }
+  
+  .collapsible-content.show {
+	display: block;
+  }
 
+  .collapsible-toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+  }
+  
+  .toggle-icon {
+	font-size: 1.25rem;
+	transition: transform 0.3s ease;
+  }
+  
+  .toggle-icon.expanded {
+	transform: rotate(45deg); /* or replace + with – if you use text */
+  }
 @media (min-width:1280px){
 	.about-projects-wrapper {
 		display: grid;
@@ -140,7 +165,7 @@ body {
 	  }
 	
 	  header h1:first-child {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
 	  }
 	
 	  .about,
